@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Ashish Khatri – Chief Financial Officer & Senior Accountant with 10+ years of expertise in financial management, auditing, and strategic planning in Nepal.">
+<meta name="description" content="Ashish Khatri – Finance & Accounts Professional with 10+ years of expertise in auditing, financial management, compliance, and strategic planning in Nepal.">
 <meta name="keywords" content="Ashish Khatri, CFO, accountant, finance, Nepal, Kathmandu, financial reporting, auditing, Tally, SAP">
-<title>Ashish Khatri | Chief Financial Officer</title>
+<title>Ashish Khatri | Finance & Accounts Professional</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -24,11 +24,7 @@
   --light-bg:#FAFAF8;
 }
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--light-bg);color:var(--text);overflow-x:hidden;cursor:none}
-
-/* CURSOR */
-.cur{width:10px;height:10px;background:var(--gold);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999;transition:transform .12s}
-.cur-ring{width:32px;height:32px;border:1.5px solid var(--gold);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transition:transform .35s ease,width .3s,height .3s,opacity .3s;opacity:.5}
+body{font-family:'DM Sans',sans-serif;background:var(--light-bg);color:var(--text);overflow-x:hidden}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,22,40,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,150,58,.15);padding:1rem 3rem;display:flex;justify-content:space-between;align-items:center}
@@ -50,9 +46,9 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,22,40,.97
 .hero-title{font-family:'Playfair Display',serif;font-size:clamp(1rem,2vw,1.4rem);font-weight:400;font-style:italic;color:var(--muted);margin-bottom:2rem;opacity:0;animation:fadeUp .9s ease .5s forwards}
 .hero-desc{font-size:.93rem;line-height:1.85;color:rgba(255,255,255,.6);max-width:460px;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease .65s forwards}
 .hero-btns{display:flex;gap:1rem;flex-wrap:wrap;opacity:0;animation:fadeUp .9s ease .8s forwards}
-.btn-gold{background:var(--gold);color:var(--navy);padding:.8rem 2rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:none;transition:background .3s,transform .2s;display:inline-block}
+.btn-gold{background:var(--gold);color:var(--navy);padding:.8rem 2rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .3s,transform .2s;display:inline-block}
 .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px)}
-.btn-outline{border:1px solid rgba(201,150,58,.4);color:var(--gold-lt);padding:.8rem 2rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:none;transition:border-color .3s,color .3s;display:inline-block}
+.btn-outline{border:1px solid rgba(201,150,58,.4);color:var(--gold-lt);padding:.8rem 2rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:border-color .3s,color .3s;display:inline-block}
 .btn-outline:hover{border-color:var(--gold);color:var(--gold)}
 .hero-right{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:1.2rem;opacity:0;animation:fadeUp .9s ease 1s forwards}
 .hero-stat-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,150,58,.15);padding:1.4rem 2rem;text-align:right;min-width:200px;transition:border-color .3s,background .3s}
@@ -157,14 +153,14 @@ section{padding:5.5rem 3rem}
 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .form-grp{display:flex;flex-direction:column;gap:.4rem}
 .form-grp label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.form-grp input,.form-grp textarea,.form-grp select{background:var(--light-bg);border:1px solid var(--border);color:var(--text);padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color .3s;resize:none;cursor:none}
+.form-grp input,.form-grp textarea,.form-grp select{background:var(--light-bg);border:1px solid var(--border);color:var(--text);padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color .3s;resize:none}
 .form-grp input:focus,.form-grp textarea:focus,.form-grp select:focus{border-color:var(--gold)}
 .form-grp textarea{height:120px}
 
 /* FOOTER */
 footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:1.8rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
 .footer-copy{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;color:rgba(255,255,255,.3)}
-.footer-link{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;cursor:none}
+.footer-link{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;cursor:pointer}
 
 @media(max-width:768px){
   nav{padding:1rem 1.5rem} .nav-links{gap:1rem} .nav-links a{font-size:.6rem}
@@ -176,13 +172,11 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
 </style>
 </head>
 <body>
-<div class="cur" id="cur"></div>
-<div class="cur-ring" id="curRing"></div>
 
 <nav>
   <div class="nav-brand">
     <span class="nav-name">Ashish Khatri</span>
-    <span class="nav-role">Chief Financial Officer</span>
+    <span class="nav-role">Finance & Accounts Professional</span>
   </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
@@ -201,8 +195,8 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
   <div class="hero-left">
     <p class="hero-eyebrow">₨ Finance · Audit · Strategy · Leadership</p>
     <h1 class="hero-name">Ashish<br><em>Khatri</em></h1>
-    <p class="hero-title">Chief Financial Officer & Strategic Finance Leader</p>
-    <p class="hero-desc">Over a decade of expertise steering financial operations, driving compliance, and delivering strategic insights for Nepal's leading organisations — from automotive to healthcare sectors.</p>
+    <p class="hero-title">Finance & Accounts Professional</p>
+    <p class="hero-desc">Over a decade of expertise in financial management, auditing, corporate accounting, and compliance. Currently serving as Senior Audit Executive and Finance Consultant, driving strategic insights for Nepal's leading organizations across diverse sectors.</p>
     <div class="hero-btns">
       <a href="#contact" class="btn-gold">Hire Me</a>
       <a href="#experience" class="btn-outline">View Experience</a>
@@ -214,7 +208,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
       <div class="stat-l">Years of Experience</div>
     </div>
     <div class="hero-stat-card">
-      <div class="stat-n">3</div>
+      <div class="stat-n">5</div>
       <div class="stat-l">Senior Finance Roles</div>
     </div>
     <div class="hero-stat-card">
@@ -232,9 +226,9 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
   <div class="about-grid">
     <div class="fade-in">
       <div class="about-body">
-        <p>I am a seasoned finance and accounting professional with over 10 years of hands-on experience managing financial operations, leading audits, and driving strategic growth across diverse industries in Nepal.</p>
-        <p>From my early days as an Account Executive at Goenka Group to serving as Chief Financial Officer at Arogya Bhawan Works Pvt. Ltd., I have consistently delivered accuracy, compliance, and measurable financial impact. My multi-disciplinary background — spanning business, education, and civil engineering — gives me a unique analytical edge.</p>
-        <p>I am committed to ensuring financial integrity, regulatory adherence, and sustainable growth for every organisation I serve.</p>
+        <p>I am a seasoned finance, accounting, and auditing professional with over 10 years of hands-on experience managing financial operations, conducting audits, and driving strategic growth across diverse industries in Nepal.</p>
+        <p>From my early days as an Account Executive at Goenka Group to serving as Chief Financial Officer at Arogya Bhawan Works Pvt. Ltd., and now as Senior Audit Executive at G. Paudyal & Associates, I have consistently delivered accuracy, compliance, and measurable financial impact. My multi-disciplinary background — spanning business, education, and civil engineering — gives me a unique analytical edge.</p>
+        <p>Currently, I'm engaged in full-time articleship with G. Paudyal & Associates while also providing part-time finance consultancy services. I am committed to ensuring financial integrity, regulatory adherence, and sustainable growth for every organisation I serve.</p>
       </div>
       <div class="about-details">
         <div class="detail-card"><div class="detail-label">Location</div><div class="detail-val">Kiritpur-10, Kathmandu</div></div>
@@ -251,9 +245,10 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
         <div class="sw-chips">
           <span class="sw-chip">Tally Prime</span>
           <span class="sw-chip">QuickBooks</span>
-          <span class="sw-chip">SAP</span>
           <span class="sw-chip">Navigator Plus</span>
           <span class="sw-chip">Dynamic Nap</span>
+          <span class="sw-chip">Busy Software</span>
+          <span class="sw-chip">Easy Billing Software</span>
           <span class="sw-chip">Medipro</span>
           <span class="sw-chip">Swatik</span>
           <span class="sw-chip">FACT</span>
@@ -286,11 +281,49 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
 
     <div class="exp-item">
       <div class="exp-period">
-        <div class="exp-date">Apr 2021 – Feb 2025</div>
+        <div class="exp-date">Nov 2025 – Present</div>
+        <div class="exp-company">G. Paudyal & Associates<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Current Role</div>
+        <h3 class="exp-role">Senior Audit Executive & Articleship</h3>
+        <ul class="exp-points">
+          <li>Prepare Balance Sheets and Income Statements for various clients including Hydro Power, Construction, and Trading companies</li>
+          <li>Develop financial projections and forecasts using current-period actual ledger data</li>
+          <li>Verify VAT returns, E-TDS filings, and VCTS tracking via the IRD portal</li>
+          <li>Draft formal Net Worth, Turnover, and Share Capital certifications</li>
+          <li>Evaluate client accounting systems and review ledger transaction entries for accuracy</li>
+          <li>Prepare interim financial statements for regulatory compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Dec 2024 – Present</div>
+        <div class="exp-company">JK Electro Tech Pvt. Ltd.<br>AK Exim & Trade Concern<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Part-Time Consulting</div>
+        <h3 class="exp-role">Finance Consultant Officer</h3>
+        <ul class="exp-points">
+          <li>Manage bank loans and interest calculations for optimal financial leverage</li>
+          <li>Finalize financial reports and ensure timely completion of regulatory filings</li>
+          <li>Review and verify transaction entries in accounting systems</li>
+          <li>Ensure proper and timely tax filing and payment compliance</li>
+          <li>Conduct budgeting, forecasting, and financial data analysis aligned with business objectives</li>
+          <li>Coordinate with external auditors for smooth audit processes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Apr 2021 – Dec 2024</div>
         <div class="exp-company">Arogya Bhawan Works Pvt. Ltd.<br>Kathmandu</div>
       </div>
       <div class="exp-body">
-        <div class="exp-tag-pill">Most Recent</div>
+        <div class="exp-tag-pill">Leadership Role</div>
         <h3 class="exp-role">Chief Financial / Account Officer</h3>
         <ul class="exp-points">
           <li>Developed financial estimates for short and long-term organisational objectives</li>
@@ -427,7 +460,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
         <a href="tel:+9779841730148" class="contact-item"><div class="contact-icon">📞</div><span class="contact-item-text">+977-9841730148</span></a>
         <a href="https://linkedin.com/in/ashishkhatri9841730148" target="_blank" class="contact-item"><div class="contact-icon">🔗</div><span class="contact-item-text">linkedin.com/in/ashishkhatri9841730148</span></a>
         <div class="contact-item"><div class="contact-icon">📍</div><span class="contact-item-text">Kiritpur-10, Kathmandu, Nepal</span></div>
-        <div class="contact-item"><div class="contact-icon">💬</div><span class="contact-item-text">WhatsApp: +977-9841730148 / 9705730148</span></div>
+        <div class="contact-item"><div class="contact-icon">💬</div><span class="contact-item-text">WhatsApp/Viber: +977-9841730148</span></div>
       </div>
     </div>
     <div class="fade-in">
@@ -441,7 +474,7 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
           <select><option>Job Opportunity</option><option>Consulting Enquiry</option><option>General Enquiry</option></select>
         </div>
         <div class="form-grp"><label>Message</label><textarea placeholder="Describe the opportunity or your enquiry..."></textarea></div>
-        <button class="btn-gold" onclick="handleSend()" style="width:100%;padding:1rem;border:none;cursor:none;font-size:.8rem">Send Message</button>
+        <button class="btn-gold" onclick="handleSend()" style="width:100%;padding:1rem;border:none;cursor:pointer;font-size:.8rem">Send Message</button>
         <p id="form-note" style="display:none;font-family:'DM Mono',monospace;font-size:.68rem;color:var(--gold);text-align:center;margin-top:.5rem">✓ Message sent — Ashish will be in touch shortly.</p>
       </div>
     </div>
@@ -449,21 +482,11 @@ footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:
 </section>
 
 <footer>
-  <span class="footer-copy">© 2025 Ashish Khatri · Chief Financial Officer · Kathmandu, Nepal</span>
+  <span class="footer-copy">© 2025 Ashish Khatri · Finance & Accounts Professional · Kathmandu, Nepal</span>
   <a href="#hero" class="footer-link">↑ Back to top</a>
 </footer>
 
 <script>
-// Cursor
-const cur=document.getElementById('cur'),ring=document.getElementById('curRing');
-let mx=0,my=0,rx=0,ry=0;
-document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;});
-(function ac(){cur.style.transform=`translate(${mx-5}px,${my-5}px)`;rx+=(mx-rx)*.12;ry+=(my-ry)*.12;ring.style.transform=`translate(${rx-16}px,${ry-16}px)`;requestAnimationFrame(ac);})();
-document.querySelectorAll('a,button,input,textarea,select').forEach(el=>{
-  el.addEventListener('mouseenter',()=>{ring.style.width='48px';ring.style.height='48px';ring.style.opacity='1';});
-  el.addEventListener('mouseleave',()=>{ring.style.width='32px';ring.style.height='32px';ring.style.opacity='.5';});
-});
-
 // Scroll
 const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
 document.querySelectorAll('.fade-in,.exp-item').forEach(el=>obs.observe(el));
