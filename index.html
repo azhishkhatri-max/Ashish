@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ashish Khatri – Finance & Accounts Professional with 10+ years of expertise in auditing, financial management, compliance, and strategic planning in Nepal.">
+<meta name="keywords" content="Ashish Khatri, CFO, Sr. accountant, finance, Nepal, Kathmandu, financial reporting, auditing, TallyPrime ERP, Excel, swastik software, FACT">
+<title>Ashish Khatri | Finance & Accounts Professional</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#0B1628;
+  --slate:#1A2B45;
+  --mid:#243550;
+  --gold:#C9963A;
+  --gold-lt:#E3B86A;
+  --cream:#F7F2EA;
+  --warm:#EDE5D8;
+  --white:#FFFFFF;
+  --text:#0D1B2E;
+  --muted:#6B7A92;
+  --border:#D8CFC4;
+  --light-bg:#FAFAF8;
+}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--light-bg);color:var(--text);overflow-x:hidden}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(11,22,40,.97);backdrop-filter:blur(8px);border-bottom:1px solid rgba(201,150,58,.15);padding:1rem 3rem;display:flex;justify-content:space-between;align-items:center}
+.nav-brand{display:flex;flex-direction:column}
+.nav-name{font-family:'Playfair Display',serif;font-size:1.1rem;font-weight:600;color:var(--white);letter-spacing:.04em}
+.nav-role{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:.1rem}
+.nav-links{display:flex;gap:2.2rem;list-style:none}
+.nav-links a{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.65);text-decoration:none;transition:color .25s}
+.nav-links a:hover{color:var(--gold)}
+
+/* HERO */
+#hero{min-height:100vh;background:var(--navy);display:grid;grid-template-columns:1fr 1fr;align-items:center;position:relative;overflow:hidden;padding:7rem 3rem 3rem}
+.hero-grid-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(201,150,58,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(201,150,58,.04) 1px,transparent 1px);background-size:60px 60px}
+.hero-glow{position:absolute;width:500px;height:500px;border-radius:50%;background:radial-gradient(circle,rgba(201,150,58,.12) 0%,transparent 70%);right:-100px;top:50%;transform:translateY(-50%);pointer-events:none}
+.hero-left{position:relative;z-index:2}
+.hero-eyebrow{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:1.5rem;opacity:0;animation:fadeUp .8s ease .2s forwards}
+.hero-name{font-family:'Playfair Display',serif;font-size:clamp(3rem,7vw,5.5rem);font-weight:700;line-height:1;color:var(--white);margin-bottom:.4rem;opacity:0;animation:fadeUp .9s ease .35s forwards}
+.hero-name em{font-style:italic;color:var(--gold-lt)}
+.hero-title{font-family:'Playfair Display',serif;font-size:clamp(1rem,2vw,1.4rem);font-weight:400;font-style:italic;color:var(--muted);margin-bottom:2rem;opacity:0;animation:fadeUp .9s ease .5s forwards}
+.hero-desc{font-size:.93rem;line-height:1.85;color:rgba(255,255,255,.6);max-width:460px;margin-bottom:2.5rem;opacity:0;animation:fadeUp .9s ease .65s forwards}
+.hero-btns{display:flex;gap:1rem;flex-wrap:nowrap;opacity:0;animation:fadeUp .9s ease .8s forwards}
+.btn-gold{background:var(--gold);color:var(--navy);padding:.8rem 2rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .3s,transform .2s;display:inline-block}
+.btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px)}
+.btn-outline{border:1px solid rgba(201,150,58,.4);color:var(--gold-lt);padding:.8rem 2rem;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:border-color .3s,color .3s;display:inline-block}
+.btn-outline:hover{border-color:var(--gold);color:var(--gold)}
+.hero-right{position:relative;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:1.2rem;opacity:0;animation:fadeUp .9s ease 1s forwards}
+.hero-stat-card{background:rgba(255,255,255,.04);border:1px solid rgba(201,150,58,.15);padding:1.4rem 2rem;text-align:right;min-width:200px;transition:border-color .3s,background .3s}
+.hero-stat-card:hover{border-color:rgba(201,150,58,.4);background:rgba(201,150,58,.05)}
+.stat-n{font-family:'Playfair Display',serif;font-size:2.8rem;font-weight:700;color:var(--gold);line-height:1}
+.stat-l{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.4);margin-top:.3rem}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+
+/* SECTION SHARED */
+section{padding:5.5rem 3rem}
+.sec-tag{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:.8rem}
+.sec-title{font-family:'Playfair Display',serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:700;line-height:1.1;color:var(--navy);margin-bottom:.5rem}
+.sec-title em{font-style:italic;color:var(--gold)}
+.sec-divider{width:48px;height:2px;background:var(--gold);margin:1rem 0 3rem}
+
+.fade-in{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+/* ABOUT */
+#about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:200px 1.1fr 1fr;gap:3.5rem;align-items:start}
+.about-photo-col{display:flex;flex-direction:column;align-items:center;gap:1rem}
+.about-photo-wrap{
+  position:relative;
+  width:200px;
+  padding:8px;
+  background:var(--navy);
+  border:2px solid var(--gold);
+}
+.about-photo{width:100%;height:240px;object-fit:cover;object-position:top center;display:block;position:relative;z-index:1;filter:grayscale(10%);transition:filter .4s}
+.about-photo:hover{filter:grayscale(0%)}
+.about-photo-name{font-family:'Playfair Display',serif;font-size:.9rem;font-weight:600;color:var(--navy);text-align:center;margin-top:.6rem}
+.about-photo-role{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin-top:.2rem}
+.about-body p{font-size:.95rem;line-height:1.9;color:#3A4557;margin-bottom:1.2rem}
+.about-details{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem;margin-top:2rem}
+.detail-card{background:var(--white);border-left:3px solid var(--gold);padding:.9rem 1.1rem}
+.detail-label{font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);margin-bottom:.3rem}
+.detail-val{font-size:.85rem;font-weight:500;color:var(--navy)}
+.software-grid{margin-top:2rem}
+.software-grid h4{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
+.sw-chips{display:flex;flex-wrap:wrap;gap:.5rem}
+.sw-chip{background:var(--navy);color:var(--cream);font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;padding:.35rem .8rem;border-radius:2px}
+
+/* EXPERIENCE */
+#experience{background:var(--navy)}
+#experience .sec-title{color:var(--white)}
+#experience .sec-tag{color:var(--gold)}
+.exp-list{display:flex;flex-direction:column;gap:0;margin-top:1rem}
+.exp-item{display:grid;grid-template-columns:180px 1fr;gap:2.5rem;padding:2.5rem 0;border-bottom:1px solid rgba(201,150,58,.1);opacity:0;transform:translateY(24px);transition:opacity .6s ease,transform .6s ease}
+.exp-item.visible{opacity:1;transform:translateY(0)}
+.exp-item:last-child{border-bottom:none}
+.exp-period{padding-top:.3rem}
+.exp-date{font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.12em;color:var(--gold);margin-bottom:.5rem}
+.exp-company{font-size:.8rem;color:rgba(255,255,255,.4);line-height:1.4}
+.exp-body{}
+.exp-tag-pill{display:inline-block;background:rgba(201,150,58,.15);border:1px solid rgba(201,150,58,.25);color:var(--gold);font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.12em;padding:.25rem .7rem;text-transform:uppercase;margin-bottom:.8rem}
+.exp-role{font-family:'Playfair Display',serif;font-size:1.5rem;font-weight:600;color:var(--white);margin-bottom:.8rem}
+.exp-points{list-style:none;display:grid;gap:.5rem}
+.exp-points li{font-size:.85rem;line-height:1.6;color:rgba(255,255,255,.55);padding-left:1.1rem;position:relative}
+.exp-points li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:.7rem}
+
+/* SKILLS */
+#skills{background:var(--white)}
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:4rem;margin-top:1rem}
+.skill-group h4{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:1.5rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
+.skill-row{margin-bottom:1rem}
+.skill-header{display:flex;justify-content:space-between;margin-bottom:.4rem}
+.skill-name{font-size:.82rem;font-weight:500;color:var(--navy)}
+.skill-pct{font-family:'DM Mono',monospace;font-size:.7rem;color:var(--gold)}
+.skill-track{height:3px;background:var(--warm);border-radius:2px;overflow:hidden}
+.skill-fill{height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-lt));width:0;transition:width 1.3s cubic-bezier(.4,0,.2,1);border-radius:2px}
+.skill-row.animated .skill-fill{width:var(--pct)}
+.soft-skills{margin-top:2rem}
+.soft-skills h4{font-family:'Playfair Display',serif;font-size:1.2rem;font-weight:600;color:var(--navy);margin-bottom:1.5rem;padding-bottom:.7rem;border-bottom:1px solid var(--border)}
+.soft-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.soft-card{background:var(--cream);border:1px solid var(--border);padding:1rem 1.1rem;transition:border-color .3s,transform .3s}
+.soft-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.soft-icon{font-size:1.2rem;margin-bottom:.4rem}
+.soft-title{font-size:.8rem;font-weight:600;color:var(--navy);margin-bottom:.25rem}
+.soft-desc{font-size:.72rem;color:var(--muted);line-height:1.5}
+
+/* EDUCATION */
+#education{background:var(--cream)}
+.edu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.2rem;margin-top:1rem}
+.edu-card{background:var(--white);border:1px solid var(--border);padding:1.6rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
+.edu-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--gold);transform:scaleX(0);transition:transform .4s}
+.edu-card:hover::before{transform:scaleX(1)}
+.edu-card:hover{border-color:var(--gold);transform:translateY(-3px)}
+.edu-year{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem}
+.edu-deg{font-family:'Playfair Display',serif;font-size:1.05rem;font-weight:600;color:var(--navy);margin-bottom:.4rem}
+.edu-inst{font-size:.78rem;color:var(--muted);line-height:1.5}
+
+/* TRAINING */
+#training{background:var(--navy)}
+#training .sec-title{color:var(--white)}
+.training-table{margin-top:2rem;border-collapse:collapse;width:100%}
+.training-table th{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);padding:.7rem 1rem;text-align:left;border-bottom:1px solid rgba(201,150,58,.2)}
+.training-table td{padding:.9rem 1rem;font-size:.82rem;color:rgba(255,255,255,.65);border-bottom:1px solid rgba(255,255,255,.05)}
+.training-table tr:hover td{background:rgba(201,150,58,.04);color:rgba(255,255,255,.85)}
+.training-table td:first-child{color:rgba(255,255,255,.9);font-weight:500}
+.badge-done{display:inline-block;background:rgba(34,197,94,.15);color:#4ade80;font-family:'DM Mono',monospace;font-size:.58rem;letter-spacing:.1em;padding:.2rem .6rem;border-radius:2px}
+
+/* CONTACT */
+#contact{background:var(--white)}
+.contact-layout{display:grid;grid-template-columns:1fr 1.25fr;gap:4rem;margin-top:1rem;align-items:start}
+.contact-intro p{font-size:.92rem;line-height:1.85;color:#3A4557;margin-bottom:1.4rem}
+.contact-panel{background:var(--cream);border:1px solid var(--border);padding:1.5rem;margin-top:1.2rem}
+.contact-block{padding-bottom:1.25rem;margin-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.contact-block:last-child{padding-bottom:0;margin-bottom:0;border-bottom:none}
+.contact-block-title{font-family:'Playfair Display',serif;font-size:1.15rem;font-weight:600;color:var(--navy);margin-bottom:.9rem}
+.contact-list{display:flex;flex-direction:column;gap:.8rem}
+.contact-item{display:flex;align-items:center;gap:1rem;padding:.75rem .85rem;background:var(--white);border:1px solid var(--border);text-decoration:none;color:var(--text);transition:border-color .3s,color .3s,transform .3s}
+.contact-item:hover{color:var(--gold);border-color:var(--gold);transform:translateY(-2px)}
+.contact-icon{width:36px;height:36px;background:var(--cream);display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0;border:1px solid var(--border)}
+.contact-item-text{font-size:.85rem;line-height:1.45}
+.contact-mini-label{display:block;font-family:'DM Mono',monospace;font-size:.55rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.15rem}
+.contact-details-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}
+.contact-detail-card{background:var(--white);border-left:3px solid var(--gold);padding:.85rem 1rem}
+.contact-detail-label{font-family:'DM Mono',monospace;font-size:.56rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:.28rem}
+.contact-detail-val{font-size:.83rem;font-weight:500;color:var(--navy);line-height:1.45}
+.compensation-box{background:rgba(201,150,58,.08);border-left:3px solid var(--gold);padding:1.1rem 1.25rem;margin-top:1rem}
+.compensation-label{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.15em;text-transform:uppercase;color:var(--gold);margin-bottom:.45rem}
+.compensation-text{font-size:.93rem;line-height:1.6;color:var(--navy)}
+.compensation-text span{font-size:.84rem;color:var(--muted)}
+.contact-form{display:flex;flex-direction:column;gap:1rem;background:var(--white);border:1px solid var(--border);padding:1.5rem}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.form-grp{display:flex;flex-direction:column;gap:.4rem}
+.form-grp label{font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.form-grp input,.form-grp textarea,.form-grp select{background:var(--light-bg);border:1px solid var(--border);color:var(--text);padding:.8rem 1rem;font-family:'DM Sans',sans-serif;font-size:.88rem;outline:none;transition:border-color .3s;resize:none}
+.form-grp input:focus,.form-grp textarea:focus,.form-grp select:focus{border-color:var(--gold)}
+.form-grp textarea{height:120px}
+.form-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:.8rem}
+.btn-secondary{background:transparent;color:var(--gold);border:1px solid rgba(201,150,58,.45);padding:1rem;font-size:.75rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:border-color .3s,color .3s;text-align:center}
+.btn-secondary:hover{border-color:var(--gold);color:var(--navy);background:rgba(201,150,58,.08)}
+.form-status{font-family:'DM Mono',monospace;font-size:.68rem;color:var(--muted);text-align:center;margin-top:.5rem;line-height:1.5}
+.form-status.error{color:#b45309}
+.form-status.success{color:#15803d}
+
+
+/* REVIEWS */
+#reviews{background:var(--cream)}
+.review-layout{display:grid;grid-template-columns:1fr 1.25fr;gap:4rem;margin-top:1rem;align-items:start}
+.review-info-card{background:var(--navy);color:rgba(255,255,255,.72);border:1px solid rgba(201,150,58,.2);padding:1.7rem}
+.review-info-card h3{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--white);margin-bottom:.8rem}
+.review-info-card p{font-size:.9rem;line-height:1.8;color:rgba(255,255,255,.62);margin-bottom:1rem}
+.review-points{list-style:none;display:grid;gap:.55rem;margin-top:1rem}
+.review-points li{font-size:.82rem;line-height:1.55;color:rgba(255,255,255,.65);padding-left:1.1rem;position:relative}
+.review-points li::before{content:'★';position:absolute;left:0;color:var(--gold);font-size:.68rem;top:.1rem}
+.review-form{display:flex;flex-direction:column;gap:1rem;background:var(--white);border:1px solid var(--border);padding:1.5rem}
+.review-note{font-size:.78rem;line-height:1.6;color:var(--muted);background:var(--light-bg);border-left:3px solid var(--gold);padding:.8rem 1rem}
+
+/* FLOATING ACTION BUTTONS */
+.floating-actions{position:fixed;right:1.2rem;bottom:1.2rem;z-index:500;display:flex;flex-direction:column;gap:.75rem;align-items:flex-end}
+.float-btn{display:flex;align-items:center;gap:.55rem;background:var(--gold);color:var(--navy);text-decoration:none;border:1px solid rgba(11,22,40,.08);box-shadow:0 10px 28px rgba(11,22,40,.22);padding:.78rem 1rem;border-radius:999px;font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;font-weight:600;transition:transform .25s,background .25s,box-shadow .25s}
+.float-btn:hover{transform:translateY(-3px);background:var(--gold-lt);box-shadow:0 14px 34px rgba(11,22,40,.28)}
+.float-btn.whatsapp{background:var(--navy);color:var(--gold-lt);border:1px solid rgba(201,150,58,.4)}
+.float-btn.whatsapp:hover{background:var(--slate);color:var(--gold)}
+.float-icon{font-size:1rem;line-height:1}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(201,150,58,.15);padding:1.8rem 3rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.footer-copy{font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.1em;color:rgba(255,255,255,.3)}
+.footer-link{font-family:'DM Mono',monospace;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);text-decoration:none;cursor:pointer}
+
+@media(max-width:768px){
+  nav{padding:1rem 1.5rem} .nav-links{gap:1rem} .nav-links a{font-size:.6rem}
+  section{padding:4rem 1.5rem} #hero{grid-template-columns:1fr;padding:6.5rem 1.5rem 3rem} .hero-right{align-items:flex-start} .hero-photo-wrap{width:150px;height:150px} .hero-photo{width:150px;height:150px}
+  .about-grid{grid-template-columns:1fr;gap:2.5rem} .about-photo-col{align-items:center} .skills-layout{grid-template-columns:1fr}
+  .exp-item{grid-template-columns:1fr;gap:.6rem} .contact-layout,.review-layout{grid-template-columns:1fr;gap:2.5rem}
+  .form-row,.form-actions,.contact-details-grid{grid-template-columns:1fr} .floating-actions{right:.9rem;bottom:.9rem}.float-label{display:none}.float-btn{padding:.75rem} footer{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-brand">
+    <span class="nav-name">Ashish Khatri</span>
+    <span class="nav-role">Finance & Accounts Professional</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#training">Training</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact Me</a></li>
+  </ul>
+</nav>
+
+<div class="floating-actions" aria-label="Quick contact and CV download">
+  <a class="float-btn whatsapp" href="https://wa.me/9779841730148" target="_blank" rel="noopener" aria-label="Contact Ashish Khatri on WhatsApp">
+    <span class="float-icon">💬</span><span class="float-label">WhatsApp</span>
+  </a>
+  <a class="float-btn" href="Ashish_Khatri_CV_2026.pdf" download="Ashish_Khatri_CV_2026.pdf" aria-label="Download Ashish Khatri CV PDF">
+    <span class="float-icon">⬇</span><span class="float-label">Download CV</span>
+  </a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid-lines"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-left">
+    <p class="hero-eyebrow">Finance · Audit · Strategy · Leadership</p>
+    <h1 class="hero-name">Ashish <em>Khatri</em></h1>
+    <p class="hero-title">Finance & Accounts Professional</p>
+    <p class="hero-desc">Over a decade of expertise in financial management, auditing, corporate accounting, and compliance. Currently serving as Senior Audit Executive and Finance Consultant, driving strategic insights for Nepal's leading organizations across diverse sectors.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold">Contact Me</a>
+      <a href="#experience" class="btn-outline">View Experience</a>
+      <a href="#download-resume" class="btn-outline">Get My Resume</a>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-stat-card">
+      <div class="stat-n">10+</div>
+      <div class="stat-l">Years of Experience</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-n">5</div>
+      <div class="stat-l">Senior Finance Roles</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-n">MBS</div>
+      <div class="stat-l">Master's in Business Studies</div>
+    </div>
+    <div class="hero-stat-card">
+      <div class="stat-n">SCO</div>
+      <div class="stat-l">Pre-Diploma in Civil Engineering</div>
+    </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="sec-tag fade-in">01 / About</div>
+  <h2 class="sec-title fade-in">Financial <em>Expertise</em><br>Built Over a Decade</h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="about-grid">
+    <div class="about-photo-col fade-in">
+      <div class="about-photo-wrap">
+        <img src="2X21.jpg" alt="Ashish Khatri" class="about-photo">
+      </div>
+      <div class="about-photo-name">Ashish Khatri</div>
+      <div class="about-photo-role">Finance & Accounts Professional</div>
+    </div>
+    <div class="fade-in">
+      <div class="about-body">
+        <p>I am a seasoned Finance, Accounting, and Auditing professional with over 10 years of hands-on experience managing financial operations, conducting audits, and driving strategic growth across diverse industries in Nepal.</p>
+        <p>From my early days as an Account Executive at Goenka Group to serving as Chief Financial Officer at Arogya Bhawan Works Pvt. Ltd., and now as Senior Audit Executive at G. Paudyal & Associates, I have consistently delivered accuracy, compliance, and measurable financial impact. My multi-disciplinary background — spanning business, education, and civil engineering — gives me a unique analytical edge.</p>
+        <p>Currently, I'm engaged in full-time articleship with G. Paudyal & Associates while also providing part-time finance consultancy services. I am committed to ensuring financial integrity, regulatory adherence, and sustainable growth for every organisation I serve.</p>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="software-grid">
+        <h4>Accounting Software Proficiency</h4>
+        <div class="sw-chips">
+          <span class="sw-chip">Tally Prime</span>
+          <span class="sw-chip">QuickBooks</span>
+          <span class="sw-chip">Navigator Plus</span>
+          <span class="sw-chip">Dynamic Nap</span>
+          <span class="sw-chip">Busy Software</span>
+          <span class="sw-chip">Easy Billing Software</span>
+          <span class="sw-chip">Medipro</span>
+          <span class="sw-chip">Swatik</span>
+          <span class="sw-chip">FACT</span>
+          <span class="sw-chip">Excel</span>
+        </div>
+      </div>
+      <div style="margin-top:2.5rem;background:var(--navy);padding:2rem;color:rgba(255,255,255,.7)">
+        <p style="font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem">Professional Strengths</p>
+        <p style="font-size:.9rem;line-height:1.9">
+          🎯 Honesty & Integrity in financial reporting<br>
+          ⏰ Punctuality & Deadline management<br>
+          💪 Hardworking & Detail-oriented<br>
+          📊 Strategic financial planning<br>
+          🔍 Analytical & Problem-solving mindset
+        </p>
+      </div>
+      <div style="margin-top:1.5rem;padding:1.2rem;border:1px solid var(--border)">
+        <p style="font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:.6rem">Interests & Hobbies</p>
+        <p style="font-size:.88rem;color:var(--muted)">📚 Coffee chats & Team events &nbsp;·&nbsp; ⚽ Football &nbsp;·&nbsp; 🎬 Movies &nbsp;·&nbsp; ✈️ Travel</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="sec-tag fade-in" style="color:var(--gold)">02 / Experience</div>
+  <h2 class="sec-title fade-in" style="color:var(--white)">A Proven Track<br><em>Record</em> of Excellence</h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="exp-list">
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Nov 2025 – Present</div>
+        <div class="exp-company">G. Paudyal & Associates<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Current Role</div>
+        <h3 class="exp-role">Senior Audit Executive & Articleship</h3>
+        <ul class="exp-points">
+          <li>Prepare Balance Sheets and Income Statements for various clients including Hydro Power, Construction, and Trading companies</li>
+          <li>Develop financial projections and forecasts using current-period actual ledger data</li>
+          <li>Verify VAT returns, E-TDS filings, and VCTS tracking via the IRD portal</li>
+          <li>Draft formal Net Worth, Turnover, and Share Capital certifications</li>
+          <li>Evaluate client accounting systems and review ledger transaction entries for accuracy</li>
+          <li>Prepare interim financial statements for regulatory compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Dec 2024 – Present</div>
+        <div class="exp-company">JK Electro Tech Pvt. Ltd.<br>AK Exim & Trade Concern<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Part-Time Consulting</div>
+        <h3 class="exp-role">Finance Consultant Officer</h3>
+        <ul class="exp-points">
+          <li>Manage bank loans and interest calculations for optimal financial leverage</li>
+          <li>Finalize financial reports and ensure timely completion of regulatory filings</li>
+          <li>Review and verify transaction entries in accounting systems</li>
+          <li>Ensure proper and timely tax filing and payment compliance</li>
+          <li>Conduct budgeting, forecasting, and financial data analysis aligned with business objectives</li>
+          <li>Coordinate with external auditors for smooth audit processes</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Apr 2021 – Dec 2024</div>
+        <div class="exp-company">Arogya Bhawan Works Pvt. Ltd.<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Leadership Role</div>
+        <h3 class="exp-role">Chief Financial / Account Officer</h3>
+        <ul class="exp-points">
+          <li>Developed financial estimates for short and long-term organisational objectives</li>
+          <li>Led month-end closing process and produced comprehensive financial reports</li>
+          <li>Ensured timely and accurate tax filing and full regulatory compliance</li>
+          <li>Oversaw budgeting, forecasting, and financial data analysis aligned with business goals</li>
+          <li>Identified and mitigated financial risks through strategic planning</li>
+          <li>Maintained adherence to audit standards, trade regulations, and legal compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Feb 2017 – Jan 2021</div>
+        <div class="exp-company">Raman Motors Pvt. Ltd.<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Senior Role</div>
+        <h3 class="exp-role">Senior Accountant</h3>
+        <ul class="exp-points">
+          <li>Verified, allocated, and reconciled Accounts Payable & Receivable with customers and vendors</li>
+          <li>Managed all cash transactions and cheque payments with full accountability</li>
+          <li>Reviewed and validated all tax-related documents for accuracy and compliance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-period">
+        <div class="exp-date">Mar 2014 – Dec 2016</div>
+        <div class="exp-company">Goenka Group<br>Kathmandu</div>
+      </div>
+      <div class="exp-body">
+        <div class="exp-tag-pill">Foundation Role</div>
+        <h3 class="exp-role">Account Executive</h3>
+        <ul class="exp-points">
+          <li>Processed Payment, Receipt, Contra, Journal, Purchase, Sales, Debit & Credit Note entries</li>
+          <li>Maintained accurate Income/Expense records and books of account</li>
+          <li>Verified billing, expenses, and supporting documentation for book-keeping accuracy</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="sec-tag fade-in">03 / Skills</div>
+  <h2 class="sec-title fade-in">Core Financial<br><em>Competencies</em></h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="skills-layout">
+    <div class="fade-in">
+      <div class="skill-group">
+        <h4>Technical Finance Skills</h4>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Financial Analysis & Reporting</span><span class="skill-pct">85%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:95%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Bookkeeping & Ledger Management</span><span class="skill-pct">98%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:95%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Auditing & Compliance</span><span class="skill-pct">84%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:90%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Budgeting & Forecasting</span><span class="skill-pct">92%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:90%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Tax Filing & Regulatory Affairs</span><span class="skill-pct">88%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:88%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Accounting Software (TallyPrime ERP, Excel, Busy Software, Swastik software etc.)</span><span class="skill-pct">89%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:92%"></div></div></div>
+        <div class="skill-row"><div class="skill-header"><span class="skill-name">Strategic Financial Planning</span><span class="skill-pct">77%</span></div><div class="skill-track"><div class="skill-fill" style="--pct:87%"></div></div></div>
+      </div>
+    </div>
+    <div class="fade-in">
+      <div class="soft-skills">
+        <h4>Professional Competencies</h4>
+        <div class="soft-grid">
+          <div class="soft-card"><div class="soft-icon">🔍</div><div class="soft-title">Analytical Thinking</div><div class="soft-desc">Evaluating financial data to identify discrepancies and optimise performance</div></div>
+          <div class="soft-card"><div class="soft-icon">💬</div><div class="soft-title">Communication</div><div class="soft-desc">Articulating financial insights to stakeholders, clients, and auditors</div></div>
+          <div class="soft-card"><div class="soft-icon">⚡</div><div class="soft-title">Problem-Solving</div><div class="soft-desc">Identifying financial inefficiencies and implementing corrective actions</div></div>
+          <div class="soft-card"><div class="soft-icon">⏱️</div><div class="soft-title">Time Management</div><div class="soft-desc">Prioritising tasks and managing multiple financial projects simultaneously</div></div>
+          <div class="soft-card"><div class="soft-icon">🔄</div><div class="soft-title">Adaptability</div><div class="soft-desc">Quickly adapting to new regulations, technologies, and business environments</div></div>
+          <div class="soft-card"><div class="soft-icon">🤝</div><div class="soft-title">Teamwork</div><div class="soft-desc">Collaborating with cross-functional teams to achieve organisational goals</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="sec-tag fade-in">04 / Education</div>
+  <h2 class="sec-title fade-in">Academic<br><em>Foundations</em></h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="edu-grid">
+    <div class="edu-card fade-in"><div class="edu-year">2019</div><div class="edu-deg">Master's in Business Studies (MBS)</div><div class="edu-inst">Tribhuvan University<br>Shankar Dev Campus, Putalisadak, Kathmandu</div></div>
+    <div class="edu-card fade-in"><div class="edu-year">2014</div><div class="edu-deg">Bachelor's in Business Studies (BBS)</div><div class="edu-inst">Tribhuvan University<br>Bagmati Community Campus, Kathmandu</div></div>
+    <div class="edu-card fade-in"><div class="edu-year">2022</div><div class="edu-deg">Bachelor's in Education (B.Ed)</div><div class="edu-inst">Tribhuvan University<br>Birendra Namuna Campus, Chandragadi, Jhapa</div></div>
+    <div class="edu-card fade-in"><div class="edu-year">2023</div><div class="edu-deg">Pre-Diploma in Civil Engineering</div><div class="edu-inst">CTEVT — Council for Technical Education<br>Central Engineering Campus, Balkumari, Lalitpur</div></div>
+    <div class="edu-card fade-in"><div class="edu-year">2010</div><div class="edu-deg">Higher Secondary Certificate (+2)</div><div class="edu-inst">Higher Secondary Education Board Nepal<br>Adarsha Higher Secondary School, Ilam</div></div>
+    <div class="edu-card fade-in"><div class="edu-year">2007</div><div class="edu-deg">School Leaving Certificate (SLC)</div><div class="edu-inst">Government of Nepal, Ministry of Education<br>Adarsha MA VI School, Ilam</div></div>
+  </div>
+</section>
+
+<!-- TRAINING -->
+<section id="training">
+  <div class="sec-tag fade-in" style="color:var(--gold)">05 / Training</div>
+  <h2 class="sec-title fade-in" style="color:var(--white)">Certifications &<br><em>Training</em></h2>
+  <div class="sec-divider fade-in"></div>
+  <table class="training-table fade-in">
+    <thead>
+      <tr>
+        <th>Training / Programme</th>
+        <th>Conducted By</th>
+        <th>Duration</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Diploma — Office Management & Financial Accounting (Tally ERP)</td><td>Kantipur Multi-Technical College, Ilam</td><td>10 Months</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Diploma — Office Management</td><td>MEELISTAR English Language & Computer Institute</td><td>3 Months</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Radio Program Production & Radio Technician</td><td>Ilam FM 93 MHz</td><td>1 Month</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Customs, VCTS & Tax Training</td><td>NADA Automobile Association of Nepal</td><td>1 Day</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Nepal Lekhapadi License</td><td>District Court Kathmandu(7455), District Court Jhapa(1466) </td><td>—</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Civil Sub Overseer</td><td>Sakshyam Design and Construction Pvt. Ltd.</td><td>6 Months</td><td><span class="badge-done">Completed</span></td></tr>
+      <tr><td>Special Cook Course</td><td>Genius Service Nepal Pvt. Ltd.</td><td>15 Days</td><td><span class="badge-done">Completed</span></td></tr>
+    </tbody>
+  </table>
+</section>
+
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="sec-tag fade-in">06 / Reviews</div>
+  <h2 class="sec-title fade-in">Comment or<br><em>Review My Work</em></h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="review-layout">
+    <div class="review-info-card fade-in">
+      <h3>Your feedback matters</h3>
+      <p>Visitors, clients, recruiters, and colleagues can use this section to share comments about the website, professional profile, or completed finance and accounting work.</p>
+      <ul class="review-points">
+        <li>Comment on the website design, clarity, or content.</li>
+        <li>Review professional work, accounting support, consulting, or audit coordination.</li>
+        <li>Send suggestions privately so improvements can be made quickly.</li>
+      </ul>
+    </div>
+
+    <form id="reviewForm" class="review-form fade-in" action="https://formsubmit.co/ajax/azhishkhatri@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New review or comment from Ashish Khatri website">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <div class="form-grp">
+          <label for="review-name">Full Name</label>
+          <input id="review-name" name="reviewer_name" type="text" placeholder="Your name" required autocomplete="name">
+        </div>
+        <div class="form-grp">
+          <label for="review-email">Email</label>
+          <input id="review-email" name="reviewer_email" type="email" placeholder="your@email.com" required autocomplete="email">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-grp">
+          <label for="review-type">Feedback Type</label>
+          <select id="review-type" name="feedback_type" required>
+            <option value="Website Comment">Website Comment</option>
+            <option value="Work Review">Work Review</option>
+            <option value="Professional Recommendation">Professional Recommendation</option>
+            <option value="Suggestion">Suggestion</option>
+          </select>
+        </div>
+        <div class="form-grp">
+          <label for="rating">Rating</label>
+          <select id="rating" name="rating" required>
+            <option value="5 Stars">★★★★★ Excellent</option>
+            <option value="4 Stars">★★★★ Very Good</option>
+            <option value="3 Stars">★★★ Good</option>
+            <option value="2 Stars">★★ Needs Improvement</option>
+            <option value="1 Star">★ Poor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grp">
+        <label for="review-message">Comment / Review</label>
+        <textarea id="review-message" name="review_message" placeholder="Write your comment, review, or suggestion..." required></textarea>
+      </div>
+
+      <div class="form-actions">
+        <button class="btn-gold" id="reviewButton" type="submit" style="width:100%;padding:1rem;border:none;cursor:pointer;font-size:.8rem">Submit Review</button>
+        <button class="btn-secondary" type="button" onclick="sendReviewByEmail()">Email Review</button>
+      </div>
+      <p id="review-note" class="form-status">Reviews and comments are sent privately to Ashish by email.</p>
+      <p class="review-note">Note: This static GitHub Pages site can collect feedback by email, but it cannot display public live reviews unless a database or review service is added later.</p>
+    </form>
+  </div>
+</section>
+
+<!-- DOWNLOAD RESUME -->
+<section id="download-resume" style="background:var(--navy);padding:4rem 3rem;text-align:center">
+  <p class="sec-tag" style="justify-content:center;display:block;margin-bottom:.8rem">Download</p>
+  <h2 style="font-family:'Playfair Display',serif;font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--white);margin-bottom:.6rem">Get My <em style="font-style:italic;color:var(--gold-lt)">Resume</em></h2>
+  <p style="font-family:'DM Mono',monospace;font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:2.2rem">Ashish Khatri · Finance & Accounts Professional · 2026</p>
+  <button
+    onclick="downloadCV()"
+    style="display:inline-flex;align-items:center;gap:.8rem;background:var(--gold);color:var(--navy);padding:1rem 2.5rem;font-family:'DM Mono',monospace;font-size:.78rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;text-decoration:none;border:none;cursor:pointer;transition:background .3s,transform .2s;box-shadow:0 8px 24px rgba(201,150,58,.3)"
+    onmouseover="this.style.background='var(--gold-lt)';this.style.transform='translateY(-3px)'"
+    onmouseout="this.style.background='var(--gold)';this.style.transform='translateY(0)'"
+    id="cvBtn"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    Download Resume
+  </button>
+  <script>
+  async function downloadCV(){
+    const btn=document.getElementById('cvBtn');
+    btn.textContent='Downloading…';
+    btn.disabled=true;
+    try{
+      const res=await fetch('https://raw.githubusercontent.com/azhishkhatri-max/Ashish/main/Ashish_Khatri_CV_2026.pdf');
+      const blob=await res.blob();
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a');
+      a.href=url;
+      a.download='Ashish_Khatri_CV_2026.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      btn.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Downloaded!';
+      setTimeout(()=>{btn.innerHTML='<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Download Resume';btn.disabled=false;},3000);
+    }catch(e){
+      btn.textContent='Download Resume';
+      btn.disabled=false;
+      window.open('https://raw.githubusercontent.com/azhishkhatri-max/Ashish/main/Ashish_Khatri_CV_2026.pdf','_blank');
+    }
+  }
+  </script>
+  <p style="margin-top:1.4rem;font-family:'DM Mono',monospace;font-size:.6rem;letter-spacing:.12em;color:rgba(255,255,255,.25)">PDF · Updated 2026</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-tag fade-in">07 / Contact Me</div>
+  <h2 class="sec-title fade-in">Contact Me<br><em>For Opportunities</em></h2>
+  <div class="sec-divider fade-in"></div>
+  <div class="contact-layout">
+    <div class="contact-intro fade-in">
+      <p>I'm actively seeking challenging Finance and Accounting leadership roles where I can bring strategic value, ensure compliance, and drive sustainable growth. Please use the form or direct contact options below.</p>
+
+      <div class="contact-panel">
+        <div class="contact-block">
+          <h3 class="contact-block-title">Expected Compensation</h3>
+          <div class="compensation-box">
+            <p class="compensation-label">Professional Expectation</p>
+            <p class="compensation-text">CTC: NPR 90,000 – 1,00,000 per month<br><span>With SSF or CIT, other Facilities</span></p>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3 class="contact-block-title">Direct Contact</h3>
+          <div class="contact-list">
+            <a href="mailto:azhishkhatri@gmail.com" class="contact-item">
+              <div class="contact-icon">✉</div>
+              <span class="contact-item-text"><span class="contact-mini-label">Email</span>azhishkhatri@gmail.com</span>
+            </a>
+            <a href="tel:+9779841730148" class="contact-item">
+              <div class="contact-icon">📞</div>
+              <span class="contact-item-text"><span class="contact-mini-label">Phone</span>+977-9841730148</span>
+            </a>
+            <a href="https://wa.me/9779841730148" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon">💬</div>
+              <span class="contact-item-text"><span class="contact-mini-label">WhatsApp / Viber</span>+977-9841730148</span>
+            </a>
+            <a href="https://linkedin.com/in/ashishkhatri9841730148" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon">🔗</div>
+              <span class="contact-item-text"><span class="contact-mini-label">LinkedIn</span>linkedin.com/in/ashishkhatri9841730148</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-block">
+          <h3 class="contact-block-title">Personal Details</h3>
+          <div class="contact-details-grid">
+            <div class="contact-detail-card" style="grid-column:1/-1"><div class="contact-detail-label">Birth Place</div><div class="contact-detail-val">Ward No. 7, Ilam Municipality, Ilam District, Nepal</div></div>
+            <div class="contact-detail-card" style="grid-column:1/-1"><div class="contact-detail-label">Permanent Address</div><div class="contact-detail-val">Haldibari Rural Municipality-1, Jhapa, Koshi, Nepal</div></div>
+            <div class="contact-detail-card" style="grid-column:1/-1"><div class="contact-detail-label">Temporary Address</div><div class="contact-detail-val">Ward No. 10, Kiritpur Municipality, Kathmandu District, Nepal</div></div>
+            <div class="contact-detail-card"><div class="contact-detail-label">Languages</div><div class="contact-detail-val">English · Nepali · Hindi</div></div>
+            <div class="contact-detail-card"><div class="contact-detail-label">Married</div><div class="contact-detail-val">Yes</div></div>
+            <div class="contact-detail-card"><div class="contact-detail-label">Vechile</div><div class="contact-detail-val">Yes</div></div>
+            <div class="contact-detail-card"><div class="contact-detail-label">PAN No.</div><div class="contact-detail-val">115802098</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fade-in">
+      <form id="contactForm" class="contact-form" action="https://formsubmit.co/ajax/azhishkhatri@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New message from Ashish Khatri website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_autoresponse" value="Thank you for contacting Ashish Khatri. Your message has been received and Ashish will reply soon.">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-row">
+          <div class="form-grp">
+            <label for="full-name">Full Name</label>
+            <input id="full-name" name="name" type="text" placeholder="Your name" required autocomplete="name">
+          </div>
+          <div class="form-grp">
+            <label for="email-address">Email</label>
+            <input id="email-address" name="email" type="email" placeholder="your@email.com" required autocomplete="email">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-grp">
+            <label for="phone-number">Phone Number</label>
+            <input id="phone-number" name="phone" type="tel" placeholder="+977-98XXXXXXXX" pattern="[+0-9()\-\s]{7,20}" required autocomplete="tel">
+          </div>
+          <div class="form-grp">
+            <label for="organisation">Organisation</label>
+            <input id="organisation" name="organisation" type="text" placeholder="Company / Organisation" autocomplete="organization">
+          </div>
+        </div>
+
+        <div class="form-grp">
+          <label for="subject">Subject</label>
+          <select id="subject" name="subject" required>
+            <option value="Job Opportunity">Job Opportunity</option>
+            <option value="Consulting Enquiry">Consulting Enquiry</option>
+            <option value="General Enquiry">General Enquiry</option>
+          </select>
+        </div>
+
+        <div class="form-grp">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Describe the opportunity or your enquiry..." required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn-gold" id="sendButton" type="submit" style="width:100%;padding:1rem;border:none;cursor:pointer;font-size:.8rem">Send Message</button>
+          <button class="btn-secondary" type="button" onclick="sendByEmail()">Email Directly</button>
+          <a class="btn-secondary" href="https://wa.me/9779841730148" target="_blank" rel="noopener">WhatsApp Me</a>
+        </div>
+        <p id="form-note" class="form-status">
+          The form tries secure email delivery first. If that service is unavailable, it opens a pre-filled email so the message is not lost.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="footer-copy">© 2025 Ashish Khatri · Finance & Accounts Professional · Kathmandu, Nepal</span>
+  <a href="#hero" class="footer-link">↑ Back to top</a>
+</footer>
+
+<script>
+// Scroll animations
+const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.fade-in,.exp-item').forEach(el=>obs.observe(el));
+const sObs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('animated');}),{threshold:.3});
+document.querySelectorAll('.skill-row').forEach(r=>sObs.observe(r));
+
+const CONTACT_EMAIL='azhishkhatri@gmail.com';
+const contactForm=document.getElementById('contactForm');
+const reviewForm=document.getElementById('reviewForm');
+const formNote=document.getElementById('form-note');
+const reviewNote=document.getElementById('review-note');
+const sendButton=document.getElementById('sendButton');
+const reviewButton=document.getElementById('reviewButton');
+
+function encodeMail(subject,body){return `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;}
+
+function buildContactMailtoLink(){
+  const data=new FormData(contactForm);
+  const d={name:data.get('name')||'',email:data.get('email')||'',phone:data.get('phone')||'',organisation:data.get('organisation')||'',subject:data.get('subject')||'Website Contact',message:data.get('message')||''};
+  return encodeMail(`Website enquiry: ${d.subject}`,`Full Name: ${d.name}\nEmail: ${d.email}\nPhone: ${d.phone}\nOrganisation: ${d.organisation}\nSubject: ${d.subject}\n\nMessage:\n${d.message}`);
+}
+
+function buildReviewMailtoLink(){
+  const data=new FormData(reviewForm);
+  const d={name:data.get('reviewer_name')||'',email:data.get('reviewer_email')||'',type:data.get('feedback_type')||'Website Comment',rating:data.get('rating')||'',message:data.get('review_message')||''};
+  return encodeMail(`Website review/comment: ${d.type}`,`Reviewer Name: ${d.name}\nReviewer Email: ${d.email}\nFeedback Type: ${d.type}\nRating: ${d.rating}\n\nComment / Review:\n${d.message}`);
+}
+
+function sendByEmail(){window.location.href=buildContactMailtoLink();}
+function sendReviewByEmail(){window.location.href=buildReviewMailtoLink();}
+
+function showThankYou(){
+  const ov=document.getElementById('thankYouOverlay');
+  ov.style.display='flex';
+  document.body.style.overflow='hidden';
+}
+function closeThankYou(){
+  const ov=document.getElementById('thankYouOverlay');
+  ov.style.display='none';
+  document.body.style.overflow='';
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+async function submitAjaxForm(form,noteEl,buttonEl,fallbackLinkBuilder,successText,fallbackText,defaultButtonText,showOverlay){
+  if(!form.checkValidity()){form.reportValidity();return;}
+  noteEl.className='form-status';
+  noteEl.textContent='Sending...';
+  buttonEl.disabled=true;
+  buttonEl.textContent='Sending...';
+  try{
+    const response=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});
+    if(!response.ok){throw new Error('Form service unavailable');}
+    noteEl.className='form-status success';
+    noteEl.textContent=successText;
+    form.reset();
+    if(showOverlay) showThankYou();
+  }catch(error){
+    noteEl.className='form-status error';
+    noteEl.textContent=fallbackText;
+    setTimeout(()=>{window.location.href=fallbackLinkBuilder();},900);
+  }finally{
+    buttonEl.disabled=false;
+    buttonEl.textContent=defaultButtonText;
+  }
+}
+
+if(contactForm){
+  contactForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    submitAjaxForm(contactForm,formNote,sendButton,buildContactMailtoLink,'Message sent successfully. Ashish will reply soon.','The online form service is not reachable right now. Opening a pre-filled email instead.','Send Message',false);
+  });
+}
+
+if(reviewForm){
+  reviewForm.addEventListener('submit',function(e){
+    e.preventDefault();
+    submitAjaxForm(reviewForm,reviewNote,reviewButton,buildReviewMailtoLink,'Thank you. Your review was submitted successfully.','The review form service is not reachable right now. Opening a pre-filled email instead.','Submit Review',true);
+  });
+}
+</script>
+
+<!-- Thank You Overlay -->
+<div id="thankYouOverlay" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(11,22,40,.93);backdrop-filter:blur(6px);flex-direction:column;align-items:center;justify-content:center">
+  <div style="background:var(--navy);border:2px solid var(--gold);padding:3rem 2.5rem;max-width:460px;width:90%;text-align:center">
+    <div style="font-size:2.8rem;margin-bottom:1rem">🌟</div>
+    <p style="font-family:'DM Mono',monospace;font-size:.65rem;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:.7rem">Thank You!</p>
+    <h3 style="font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--white);margin-bottom:.9rem">Your Review Has Been <em style="font-style:italic;color:var(--gold-lt)">Submitted</em></h3>
+    <p style="font-size:.88rem;line-height:1.8;color:rgba(255,255,255,.6);margin-bottom:2rem">Thank you for sharing your feedback. Your comment has been sent to Ashish and is greatly appreciated.</p>
+    <button onclick="closeThankYou()" style="background:var(--gold);color:var(--navy);border:none;padding:.85rem 2.5rem;font-family:'DM Mono',monospace;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;cursor:pointer;" onmouseover="this.style.background='var(--gold-lt)'" onmouseout="this.style.background='var(--gold)'">← Back to Website</button>
+  </div>
+</div>
+</body>
+</html>
